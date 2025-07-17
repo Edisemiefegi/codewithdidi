@@ -8,7 +8,7 @@ import Pulsedot from "./components/Pulsedot";
 import Music from "./components/Music";
 import { Confetti } from "./components/Confetti";
 function App() {
-  const [treatCount, setTreatCount] = useState(300);
+  const [treatCount] = useState(300);
 
 
   return (

@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Pulsedot({ className }: { className?: string }) {
   return (
