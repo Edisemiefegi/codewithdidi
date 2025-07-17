@@ -1,4 +1,32 @@
 @import "tailwindcss";
 
 @import 'primeicons/primeicons.css';
-        
+    
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 3s ease-in-out infinite;
+}
+
+@keyframes bounce-gentle {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2.5s ease-in-out infinite;
+}

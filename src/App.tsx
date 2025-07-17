@@ -7,6 +7,7 @@ import Followers from "./components/Followers";
 import Pulsedot from "./components/Pulsedot";
 import Music from "./components/Music";
 import { Confetti } from "./components/Confetti";
+import Thankyou from "./components/Thankyou";
 function App() {
   const [treatCount] = useState(300);
 
@@ -43,8 +44,11 @@ function App() {
         </div>
 
         <TreatShelf treatCount={treatCount} />
+              <Thankyou/>
+
       </section>
       <Wall />
+
     </div>
   );
 }
