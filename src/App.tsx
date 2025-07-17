@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, } from "react";
 import { Toaster } from "sonner";
 import { TreatShelf } from "./components/TreatShelf";
 import { Wall } from "./components/Wall";
@@ -6,12 +6,15 @@ import Chef from "./components/Chef";
 import Followers from "./components/Followers";
 import Pulsedot from "./components/Pulsedot";
 import Music from "./components/Music";
+import { Confetti } from "./components/Confetti";
 function App() {
   const [treatCount, setTreatCount] = useState(300);
+
 
   return (
     <div className="w-full relative flex flex-col gap-8 p-8 h-full bg-gradient-to-r from-[#FFF9E5] from-10% via-[#FFEDB8]  via-70% to-[#E1E8D1] to-90%  ">
       <Toaster position="top-right" /> <Music />
+      <Confetti />
       <Pulsedot className="absolute top-10 left-10" />
       <Pulsedot className="absolute right-10 top-20" />
       {/* Header */}
